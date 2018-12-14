@@ -1,19 +1,19 @@
 package com.example.administrador.testsenddatafirebase;
 
 public class Meeting {
-    private String name="";
+    private String nombre="";
     private String place="";
-    private int numberOfPeople=0;
-    private String fecha="";
-    private String sport="";
+    private int peopleCounter=0;
+    private String date="";
+    private String deporte="";
     private String time="";
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getPlace() {
@@ -24,28 +24,28 @@ public class Meeting {
         this.place = place;
     }
 
-    public int getNumberOfPeople() {
-        return numberOfPeople;
+    public int getPeopleCounter() {
+        return peopleCounter;
     }
 
-    public void setNumberOfPeople(int numberOfPeople) {
-        this.numberOfPeople = numberOfPeople;
+    public void setPeopleCounter(int peopleCounter) {
+        this.peopleCounter = peopleCounter;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getDate() {
+        return date;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public String getSport() {
-        return sport;
+    public String getDeporte() {
+        return deporte;
     }
 
-    public void setSport(String sport) {
-        this.sport = sport;
+    public void setDeporte(String deporte) {
+        this.deporte = deporte;
     }
 
     public String getTime() {
@@ -56,13 +56,24 @@ public class Meeting {
         this.time = time;
     }
 
+    public Meeting(String nombre, String place, int peopleCounter, String date, String deporte, String time) {
+        this.nombre = nombre;
+        this.place = place;
+        this.peopleCounter = peopleCounter;
+        this.date = date;
+        this.deporte = deporte;
+        this.time = time;
+    }
+
+    public Meeting() { }
+
     @Override
     public String toString(){
         return "User{" +
-                "date='" +fecha +'\''+
-                ", deporte='" +sport +'\''+
-                ", nombre='" + name + '\'' +
-                ", people_counter='" + numberOfPeople + '\'' +
+                "date='" +date +'\''+
+                ", deporte='" +deporte +'\''+
+                ", nombre='" + nombre + '\'' +
+                ", people_counter='" + peopleCounter + '\'' +
                 ", place='" +place +'\''+
                 ", time='" +time +'\''+
                 '}';

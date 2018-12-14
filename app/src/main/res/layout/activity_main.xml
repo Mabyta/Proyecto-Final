@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/common_google_signin_btn_text_light_focused"
-            android:text="Sign in"
+            android:text="Sign up"
             android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
     </LinearLayout>
 

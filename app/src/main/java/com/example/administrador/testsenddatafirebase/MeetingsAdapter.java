@@ -28,12 +28,12 @@ public class MeetingsAdapter extends RecyclerView.Adapter<MeetingsAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull MeetingsAdapter.MyViewHolder holder, int position){
         // Se asignan los datos a los items
-        holder.nombre.setText(mDataset.get(position).getName());
-        holder.counter_people.setText("People counter= "+mDataset.get(position).getNumberOfPeople());
+        holder.nombre.setText(mDataset.get(position).getNombre());
+        holder.counter_people.setText("People counter= "+mDataset.get(position).getPeopleCounter());
         holder.lugar.setText("Place: "+mDataset.get(position).getPlace());
-        holder.fecha.setText("Date: "+mDataset.get(position).getFecha());
+        holder.fecha.setText("Date: "+mDataset.get(position).getDate());
         holder.hora.setText("Time: "+mDataset.get(position).getTime());
-        holder.deporte.setText("Sport: "+mDataset.get(position).getSport());
+        holder.deporte.setText("Sport: "+mDataset.get(position).getDeporte());
 
     }
 

@@ -26,6 +26,8 @@ public class SignInActivity extends AppCompatActivity {
     private EditText email;
     private EditText name;
     private EditText phone;
+    private EditText age;
+    private EditText condition;
     private Button createAccount;
     private EditText sportName;
     private EditText calories;
@@ -45,7 +47,9 @@ public class SignInActivity extends AppCompatActivity {
         // Se relacionan las variables con los componentes del layout
         email=(EditText)findViewById(R.id.registerEmail);
         name=(EditText)findViewById(R.id.registerName);
-        phone=(EditText)findViewById(R.id.phone);
+        phone=(EditText)findViewById(R.id.registerPhone);
+        condition=(EditText)findViewById(R.id.registerCondition);
+        age=(EditText)findViewById(R.id.registerAge);
         createAccount=(Button)findViewById(R.id.createAccount);
         sportName=(EditText)findViewById(R.id.nameSport);
         calories=(EditText)findViewById(R.id.calories);
@@ -68,7 +72,9 @@ public class SignInActivity extends AppCompatActivity {
                     String correo=email.getText().toString();
                     String nombre=name.getText().toString();
                     String telefono=phone.getText().toString();
-                    if(correo.isEmpty()||nombre.isEmpty()||telefono.isEmpty()){
+                    String edad=age.getText().toString();
+                    String condicion=condition.getText().toString();
+                    if(correo.isEmpty()||nombre.isEmpty()||telefono.isEmpty()||edad.isEmpty()||condicion.isEmpty()){
                         AlertDialog.Builder alertDialog=new AlertDialog.Builder(SignInActivity.this);
                         alertDialog.setTitle("Alert");
                         alertDialog.setMessage("One of fields are blank");
@@ -83,6 +89,9 @@ public class SignInActivity extends AppCompatActivity {
                             user.name = nombre;
                             user.email = correo;
                             user.phone = telefono;
+                            user.age = edad;
+                            user.condition = condicion;
+                            user.sports = listaDeportes.toArray(new Sport[listaDeportes.size()]);
                             agregaHijoBD(user);
                             Intent variables = new Intent();
                             variables.putExtra("usuario", (Serializable) user);
@@ -138,7 +147,7 @@ public class SignInActivity extends AppCompatActivity {
      */
     private void agregaHijoBD(User user){
         //esto lo deben investigar
-        mDatabase.child("users").setValue(user);
+        mDatabase.child("usersMaby");
     }
 
     /**

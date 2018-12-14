@@ -10,6 +10,7 @@ public class Sport implements Serializable {
         this.name = name;
         this.caloriesxminute = caloriesxminute;
     }
+
     public Sport(){
 
     }
@@ -32,7 +33,7 @@ public class Sport implements Serializable {
 
     @Override
     public String toString() {
-        return "{" +
+        return "Sport{" +
                 "name='" + name + '\'' +
                 ", caloriesxminute=" + caloriesxminute +
                 '}';
