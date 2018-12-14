@@ -38,12 +38,6 @@
             android:layout_height="wrap_content"
             android:text="Correo: adriana.lozano@uabc.edu.mx"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        <TextView
-            android:id="@+id/condicion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Condicion: Asmatica"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     </LinearLayout>
 

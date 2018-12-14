@@ -147,7 +147,7 @@ public class SignInActivity extends AppCompatActivity {
      */
     private void agregaHijoBD(User user){
         //esto lo deben investigar
-        mDatabase.child("usersMaby");
+        mDatabase.child("usersMaby").setValue(user);
     }
 
     /**

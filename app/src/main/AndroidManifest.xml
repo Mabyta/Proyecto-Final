@@ -21,7 +21,8 @@
         <activity android:name=".CreateMettingActivity" />
         <activity android:name=".SelectionInformactionActivity" />
         <activity android:name=".MeetingActivity" />
-        <activity android:name=".UserActivity"></activity>
+        <activity android:name=".UserActivity" />
+        <activity android:name=".SeeUsersActivity"></activity>
     </application>
 
 </manifest>

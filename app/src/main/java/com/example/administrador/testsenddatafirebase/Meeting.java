@@ -1,6 +1,8 @@
 package com.example.administrador.testsenddatafirebase;
 
-public class Meeting {
+import java.io.Serializable;
+
+public class Meeting implements Serializable {
     private String nombre="";
     private String place="";
     private int peopleCounter=0;

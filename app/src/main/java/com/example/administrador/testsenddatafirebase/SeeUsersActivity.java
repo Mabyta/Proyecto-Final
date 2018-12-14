@@ -3,7 +3,7 @@ package com.example.administrador.testsenddatafirebase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class seeUsersActivity extends AppCompatActivity {
+public class SeeUsersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -6,4 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".UserActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Users name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/verEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age: 21 years"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/VerTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tel. 6862829227"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/verCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: adriana.lozano@uabc.edu.mx"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/verCondicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condition: Media"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_dark" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

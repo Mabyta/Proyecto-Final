@@ -1,5 +1,7 @@
 package com.example.administrador.testsenddatafirebase;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,10 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MeetingsAdapter extends RecyclerView.Adapter<MeetingsAdapter.MyViewHolder>{
     private ArrayList<Meeting> mDataset;
+    private Context context;
 
     @NonNull
     @Override
@@ -34,7 +38,15 @@ public class MeetingsAdapter extends RecyclerView.Adapter<MeetingsAdapter.MyView
         holder.fecha.setText("Date: "+mDataset.get(position).getDate());
         holder.hora.setText("Time: "+mDataset.get(position).getTime());
         holder.deporte.setText("Sport: "+mDataset.get(position).getDeporte());
-
+        final int pocision=position;
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent meeting=new Intent(context, MeetingActivity.class);
+                meeting.putExtra("meeting",(Serializable) mDataset.get(pocision));
+                context.startActivity(meeting);
+            }
+        });
     }
 
     @Override
@@ -42,8 +54,9 @@ public class MeetingsAdapter extends RecyclerView.Adapter<MeetingsAdapter.MyView
         return mDataset.size();
     }
 
-    public MeetingsAdapter(ArrayList<Meeting> mDataset) {
+    public MeetingsAdapter(ArrayList<Meeting> mDataset, Context context) {
         this.mDataset=mDataset;
+        this.context=context;
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {

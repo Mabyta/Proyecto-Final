@@ -33,12 +33,10 @@ public class MainActivity extends AppCompatActivity {
     private int pocision=0;
     private String emailUsuario;
     private DatabaseReference mDatabase;
-    //
     List<User> listaUsuarios = new ArrayList<User>();
     List<Sport> listaDeportes = new ArrayList<Sport>();
 
-    // Constantes
-    public static final String EXTRA_POST_KEY = "post_key";
+    // Constante
     public static final int SIGN_IN_ACTIVITY=0;
 
     @Override
