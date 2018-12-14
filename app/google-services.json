@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "580870075282",
+    "firebase_url": "https://sportbuddies-b7140.firebaseio.com",
+    "project_id": "sportbuddies-b7140",
+    "storage_bucket": "sportbuddies-b7140.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580870075282:android:504c17e5b498c8fa",
+        "android_client_info": {
+          "package_name": "com.example.administrador.testsenddatafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580870075282-e4au7m37acivk31ja4g428shvs6igrcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQyQpwt_EozbRdTvI7zjQjGENulVzFq_o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

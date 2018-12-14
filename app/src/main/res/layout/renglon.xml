@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nombreRenglon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Noche de Box"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/fechaRenglon"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Date: 12 / 8 / 2018"/>
+            <TextView
+                android:id="@+id/horaRenglon"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Time: 10:20"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/lugarRenglon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place: Unidad deportiva UABC"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:id="@+id/deporteRenglon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sport: Box"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:id="@+id/numeroRenglon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="People counter = 0"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

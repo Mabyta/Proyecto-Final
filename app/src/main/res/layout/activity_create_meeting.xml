@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Meeting"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter name of meeting:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:id="@+id/nameMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@id/dateMeeting"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:id="@+id/dateMeeting"
+                android:focusable="true"
+                android:nextFocusDown="@id/timeMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter time:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:id="@+id/timeMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@id/placeMeeting"
+                android:ems="10"
+                android:inputType="time" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter place:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:id="@+id/placeMeeting"
+                android:nextFocusDown="@id/peopleMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter number of people what will take part:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:id="@+id/peopleMeeting"
+                android:nextFocusDown="@id/createMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/createMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Create meeting"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
