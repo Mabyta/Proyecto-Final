@@ -25,10 +25,9 @@ public class SelectionInformactionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_selection_informaction);
 
         sesion=(User) getIntent().getSerializableExtra("usuario");
-        String[] deportes=new String[sesion.sports.length+1];
-        deportes[0]="Select a sport";
+        String[] deportes=new String[sesion.sports.length];
         for (int o=0;o<deportes.length;o++){
-            deportes[o+1]=sesion.sports[o].name;
+            deportes[o]=sesion.sports[o].name;
         }
 
         spinner=(Spinner) findViewById(R.id.spinner);
@@ -82,6 +81,7 @@ public class SelectionInformactionActivity extends AppCompatActivity {
                 }else{
                     Intent verMeetings=new Intent(getApplicationContext(),SeeMeetingsActivity.class);
                     verMeetings.putExtra("deporte",deporteSeleccionado);
+                    startActivity(verMeetings);
                 }
             }
         });

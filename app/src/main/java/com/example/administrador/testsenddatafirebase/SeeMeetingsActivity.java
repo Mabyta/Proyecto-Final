@@ -99,6 +99,7 @@ public class SeeMeetingsActivity extends AppCompatActivity {
                         Meeting meeting = meetings.getValue(Meeting.class);
                         if (!filtrarLista(meeting)) {
                             listaMeeting.add(meeting);
+                            mAdapter.notifyDataSetChanged();
                         }
                     }catch (NullPointerException e){
                         Log.d("NOSEPUDO","Error de NullPointerException");
